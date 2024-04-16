@@ -1,1 +1,62 @@
+<!doctype html>
+<html lang="en">
 
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flask Web App</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="/static/style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <form action='/predict' method="POST" class="form">
+            <h1> Iris Flowers Classification </h1>
+            <div class="mb-3">
+                <label class="form-label">Sepal Length</label>
+                <input class="form-control" type="number" step="0.1" name="sepal_length"
+                    placeholder="Enter Sepal Length" required min='4' max='8' />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Sepal Width</label>
+                <input class="form-control" type="number" step="0.1" name="sepal_width" placeholder="Enter Sepal Width"
+                    required min='2' max='4' />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Petal Length</label>
+                <input class="form-control" type="number" step="0.1" name="petal_length"
+                    placeholder="Enter Petal Length" required min='1' max='6' />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Petal Width</label>
+                <input class="form-control" type="number" step="0.1" name="petal_width" placeholder="Enter Petal Width"
+                    required min='0' max='3' />
+            </div>
+    </div>
+    <div class="mb-3" id="Predict">
+        <input class="btn btn-primary" type="submit" value="Predict the Species" required />
+    </div>
+    <h4>
+        The Prediction is - 
+    </h4>
+
+    <h5>
+        0 : Iris-setosa, 1 : Iris-versicolor, 2 : Iris-virginica
+    </h5>
+    </form>
+
+    <script>
+        alert("This page has been loaded!")
+    </script>
+
+</body>
+
+</html>
