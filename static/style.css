@@ -1,0 +1,40 @@
+* {
+  font-family: "Alkatra", cursive;
+}
+
+body {
+  background-image: url(/static/img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+div {
+  margin-bottom: 15px;
+}
+.form-label {
+  padding: 20px;
+  margin-bottom: 15px;
+  background-color: transparent;
+}
+
+.form-control {
+  width: 9%;
+  text-align: center;
+}
+
+#Predict {
+  padding-left: 5%;
+  box-shadow: gray;
+  padding-top: 3px;
+}
+
+h4 {
+  color: red;
+  padding-left: 1cm;
+}
+
+h5 {
+  color: white;
+  padding-top: 3px;
+  gap: 3px;
+}
